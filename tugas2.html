@@ -22,11 +22,11 @@
             <div class="card-content px-5 pt-3">
                 <h2>Latihan 2</h2>
                 <div class="px-3 border-top py-4 text-center">
-                    <select id="benua" class="form-select mb-3"
-                        onchange="loadNegara(document.getElementById('benua').value)">
+                    <select id="skincare" class="form-select mb-3"
+                        onchange="loadNegara(document.getElementById('skincare').value)">
 
                     </select>
-                    <select id="negara" class="form-select">
+                    <select id="merk" class="form-select">
 
 
                     </select>
@@ -41,7 +41,7 @@
         const xhttp = new XMLHttpRequest();
         xhttp.onload = function () {
             const myObj = JSON.parse(this.responseText);
-            let html = "<option>Pilih Benua...</option>";
+            let html = "<option>Pilih jenis skincare...</option>";
             let idx = 0;
             for (let x of Object.keys(myObj)) {
                 html += "<option";
@@ -50,9 +50,9 @@
                 html += "</option>";
                 idx += 1;
             }
-            document.getElementById("benua").innerHTML = html;
+            document.getElementById("skincare").innerHTML = html;
         }
-        xhttp.open("GET", "https://mocki.io/v1/dcec55fc-a839-4f5c-a0a7-15d8d77b55f3", true);
+        xhttp.open("GET", "tugas2.json", true);
         xhttp.send();
     }
 
@@ -60,15 +60,15 @@
         const xhttp = new XMLHttpRequest();
         xhttp.onload = function () {
             const myObj = JSON.parse(this.responseText);
-            let html = "<option>Pilih Negara...</option>";
+            let html = "<option>Pilih merk...</option>";
             for (let x of Object.values(myObj)[idx]) {
                 html += "<option>";
                 html += x;
                 html += "</option>";
             }
-            document.getElementById("negara").innerHTML = html;
+            document.getElementById("merk").innerHTML = html;
         }
-        xhttp.open("GET", "https://mocki.io/v1/dcec55fc-a839-4f5c-a0a7-15d8d77b55f3", true);
+        xhttp.open("GET", "tugas2.json", true);
         xhttp.send();
     }
 

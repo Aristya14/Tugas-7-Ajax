@@ -20,7 +20,7 @@
             <div class="card-content px-5 pt-3">
                 <h2>Latihan 1</h2>
                 <div class="px-3 border-top py-4 text-center">
-                    <button type="button" class="btn btn-primary" onclick="loadDoc()">Tambahkan Sesuatu</button>
+                    <button type="button" class="btn btn-primary" onclick="loadDoc()">MAU KENALAN?</button>
                     <div class="my-3" id='iniTarget'></div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
             const myObj = JSON.parse(this.responseText);
             document.getElementById("iniTarget").innerHTML = myObj.teks;
         }
-        xhttp.open("GET", "https://mocki.io/v1/a0f26d71-01c3-4b0a-8d83-85deac585b3b", true);
+        xhttp.open("GET", "tugas1.json", true);
 
         xhttp.send();
     }

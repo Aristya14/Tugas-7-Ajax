@@ -1,31 +1,35 @@
 {
-    "afrika": [
-        "Siberia",
-        "Algeria",
-        "Libya",
-        "Mesir"
+    "Toner": [
+        "whitelab niacinamide",
+        "CosRX",
+        "Wardah",
+        "Somebymi",
+        "MS Glow"
     ],
-    "eropa": [
-        "Italia",
-        "Spanyol",
-        "Perancis",
-        "Belanda"
+    "FacialWash": [
+        "Wardah",
+        "Ponds",
+        "Emina",
+        "Kedas Beauty"
     ],
-    "asia": [
-        "Indonesia",
-        "Malaysia",
-        "Singapura",
-        "Thailand"
+    "Serum": [
+        "Scarlett",
+        "Lacoco",
+        "Somethinc",
+        "Wardah",
+        "MS Glow"
     ],
-    "amerika": [
-        "USA",
-        "Brazil",
-        "Argentina",
-        "Mexico"
+    "Mousturizer": [
+        "Scarlett",
+        "Wardah",
+        "Ponds",
+        "MsGlow"
     ],
-    "australia": [
-        "Tasmania",
-        "Queensland",
-        "Victoria"
+    "Masker": [
+        "Nature Republic",
+        "N'Pure",
+        "Emina",
+        "Rorec",
+        "Innisfree"
     ]
 }
